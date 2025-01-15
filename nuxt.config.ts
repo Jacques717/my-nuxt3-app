@@ -9,5 +9,6 @@ export default defineNuxtConfig({
       autoprefixer: {}
     }
   },
-  plugins: ['~/plugins/graphql-client.js']
+  plugins: ['~/plugins/graphql-client.js'],
+  modules: ['@nuxtjs/tailwindcss']
 })

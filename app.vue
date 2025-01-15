@@ -1,27 +1,20 @@
 <template>
-  <div>
-    <nav>
-      <NuxtLink to="/">Home</NuxtLink> |
-      <NuxtLink to="/products">Products</NuxtLink>
+  <div class="min-h-screen bg-gray-50">
+    <nav class="bg-white shadow-sm p-4 mb-8">
+      <div class="container mx-auto">
+        <NuxtLink 
+          to="/" 
+          class="text-emerald-600 hover:text-emerald-800 px-2 py-1 rounded-md transition-colors"
+        >Home</NuxtLink>
+        <span class="text-gray-400">|</span>
+        <NuxtLink 
+          to="/products" 
+          class="text-emerald-600 hover:text-emerald-800 px-2 py-1 rounded-md transition-colors"
+        >Products</NuxtLink>
+      </div>
     </nav>
-    <NuxtPage />
+    <div class="container mx-auto px-4">
+      <NuxtPage />
+    </div>
   </div>
 </template>
-
-<style>
-nav {
-  padding: 1rem;
-  margin-bottom: 2rem;
-}
-
-nav a {
-  color: #42b883;
-  text-decoration: none;
-  margin: 0 0.5rem;
-}
-
-nav a.router-link-active {
-  color: #35495e;
-  font-weight: bold;
-}
-</style>
